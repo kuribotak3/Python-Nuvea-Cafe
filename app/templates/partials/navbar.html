@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a
+      class="navbar-brand fw-bold d-flex align-items-center"
+      href="{{ url_for('index') }}"
+    >
+      <i class="fa-solid fa-mug-saucer me-2"></i> Nuvéa Café
+    </a>
+
+    <div class="navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link {% if request.endpoint == 'index' %}active{% endif %}"
+            href="{{ url_for('index') }}"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link {% if request.endpoint == 'menu.catalog' %}active{% endif %}"
+            href="#"
+            >Menu</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link {% if request.endpoint == 'menu.about' %}active{% endif %}"
+            href="{{ url_for('menu.about') }}"
+            >About</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

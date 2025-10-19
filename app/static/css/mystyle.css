@@ -1,0 +1,58 @@
+:root {
+  --bs-primary: #8f4f0e;
+  --bs-primary-rgb: 143, 79, 14;
+  --bs-secondary: #c68c53;
+  --bs-secondary-rgb: 198, 140, 83;
+  --bs-success: #4e944f;
+  --bs-success-rgb: 78, 148, 79;
+  --bs-danger: #b23b3b;
+  --bs-danger-rgb: 178, 59, 59;
+  --bs-warning: #e5b567;
+  --bs-warning-rgb: 229, 181, 103;
+  --bs-info: #5d8aa8;
+  --bs-info-rgb: 93, 138, 168;
+}
+
+body {
+  background-color: #fcc995;
+  color: #fff; /* opsional: ubah teks agar kontras */
+}
+
+/* Atur tinggi area carousel */
+#sliderEvent .carousel-item {
+  height: 600px; /* ubah sesuai keinginan: misal 500px, 700px, dst */
+}
+
+/* Pastikan gambar menyesuaikan proporsional */
+#sliderEvent .carousel-item img {
+  height: 100%;
+  object-fit: cover; /* atau 'contain' jika ingin seluruh gambar terlihat */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  #sliderEvent .carousel-item {
+    height: 400px;
+  }
+}
+
+/* --- CATALOG --- */
+
+#sliderCatalog .carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+#sliderCatalog .carousel-control-prev i,
+.carousel-control-next i {
+  color: #5a3e1b;
+}
+
+@media (max-width: 768px) {
+  #sliderCatalog .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+}
+
+/* --- CATALOG --- */
