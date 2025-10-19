@@ -1,0 +1,15 @@
+{% extends "partials/base.html" %}
+
+{% block title %}Tentang Kami | Nuvéa Café{% endblock %}
+
+{% block main_content %}
+<div class="container py-5">
+  <h1 class="text-center text-primary">Tentang Nuvéa Café</h1>
+  <p class="text-muted text-center mt-3">
+    Kami percaya setiap cangkir kopi punya cerita. Datang dan temukan ceritamu di Nuvéa Café.
+  </p>
+  <div class="text-center mt-4">
+    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">Kembali ke Beranda</a>
+  </div>
+</div>
+{% endblock %}

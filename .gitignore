@@ -1,0 +1,50 @@
+# ===== Python cache =====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===== Virtual environments =====
+venv/
+env/
+ENV/
+.venv/
+.env/
+env.bak/
+
+# ===== Flask instance or local config =====
+instance/
+app/config/__pycache__/
+# app/config/config.py  # jika berisi kredensial (SECRET_KEY, dsb)
+
+# ===== Environment variables =====
+.env
+*.env
+
+# ===== IDE / editor files =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== Logs and temp files =====
+*.log
+*.tmp
+*.bak
+
+# ===== Build / distribution =====
+build/
+dist/
+*.egg-info/
+.eggs/
+*.spec
+
+# ===== Coverage / test artifacts =====
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# ===== OS generated =====
+.DS_Store
+Thumbs.db
