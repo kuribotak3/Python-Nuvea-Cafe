@@ -178,3 +178,68 @@ body {
 }
 
 /* --- STORY HOME --- */
+
+/* --- FOOTER --- */
+
+footer {
+  background: linear-gradient(180deg, #c68c53 0%, #8f4f0e 100%);
+  color: #fff7ec;
+  padding: 40px 0 20px; /* 🔹 diperkecil dari 60px 0 30px */
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem; /* 🔹 teks sedikit lebih kecil agar lebih proporsional */
+}
+
+footer .footer-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer .footer-link {
+  color: #fff7ec;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+footer .footer-link:hover {
+  color: #e5b567;
+}
+
+footer .footer-logo {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer .social-icons a {
+  color: #fff7ec;
+  font-size: 1.2rem;
+  margin-right: 12px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #e5b567;
+}
+
+footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 🔹 Tambahan jarak antara content atas & footer */
+.footer-spacing {
+  margin-top: 80px; /* ubah sesuai selera (60–100px ideal) */
+}
+
+/* --- FOOTER --- */

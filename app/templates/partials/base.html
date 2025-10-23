@@ -15,7 +15,9 @@
         {% include "partials/navbar.html" %}
         
         {% block main_content %}{% endblock %}
-
+        
+        {% include "partials/footer.html" %}
+        
         {{ bootstrap.load_js() }}
         <!-- <script src="{{ url_for('static', filename='js/myscript.js') }}"></script> -->
     </body>
