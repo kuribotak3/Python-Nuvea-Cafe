@@ -4,4 +4,4 @@ menu = Blueprint('menu', __name__)
 
 @menu.route('/about-us')
 def about():
-    return render_template('about.html')
+    return render_template('about/index.html')
