@@ -23,21 +23,158 @@ body {
 
 /* --- CATALOG --- */
 
+.menu-title {
+  color: #7a3b00; /* sama tone dengan Our Story */
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Garis tipis lembut di bawah judul */
+.menu-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background-color: #4caf50; /* warna hijau senada tombol “Selengkapnya” */
+  border-radius: 3px;
+}
+
+/* === Link “View All” === */
+.menu-link {
+  color: #4caf50;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.menu-link:hover {
+  color: #388e3c;
+  transform: translateX(3px);
+}
+
+/* Memberi ruang tambahan agar tombol tidak menabrak card */
+/* === Navigasi Carousel (gaya semula tapi lebih presisi) === */
 #sliderCatalog .carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
+#sliderCatalog .carousel-control-next {
+  width: 5%; /* kecil saja biar tidak makan tempat */
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+#sliderCatalog .carousel-control-prev:hover,
+#sliderCatalog .carousel-control-next:hover {
+  opacity: 1;
 }
 
 #sliderCatalog .carousel-control-prev i,
-.carousel-control-next i {
+#sliderCatalog .carousel-control-next i {
   color: #5a3e1b;
 }
 
+/* === Padding carousel agar isi tidak terlalu mepet tapi tetap ringkas === */
+#sliderCatalog .carousel-inner {
+  padding: 0 10px; /* sebelumnya default terlalu lebar, ini kita kecilkan */
+}
+
+/* === Kartu menu === */
+#sliderCatalog .card {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#sliderCatalog .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* === Responsif === */
 @media (max-width: 768px) {
   #sliderCatalog .carousel-control-prev,
-  .carousel-control-next {
-    width: 10%;
+  #sliderCatalog .carousel-control-next {
+    width: 8%;
+  }
+
+  #sliderCatalog .carousel-inner {
+    padding: 0 5px;
   }
 }
 
 /* --- CATALOG --- */
+
+/* --- STORY HOME --- */
+
+.section-title {
+  color: #7a3b00;
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.section-text {
+  color: #4b2e05;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.btn-story {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-story:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.story-section {
+  background-color: #fbc994;
+  padding: 80px 0;
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* jarak antara gambar dan teks */
+  flex-wrap: wrap; /* tetap responsif di layar kecil */
+}
+
+.story-image {
+  flex: 0 0 400px;
+}
+
+.story-image .card {
+  width: 100%;
+  height: 400px;
+  transform: rotate(-7deg);
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-image .card-body {
+  transform: rotate(7deg);
+}
+
+.story-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+/* --- STORY HOME --- */
