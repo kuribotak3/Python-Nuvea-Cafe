@@ -1,0 +1,209 @@
+<section
+  id="catalogMenu"
+  class="py-5"
+  style="background: linear-gradient(to bottom right, #fbc994, #f4a46025)"
+>
+  <div class="container">
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h1
+        class="fw-bold text-primary"
+        style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); font-size: 4rem"
+      >
+        Catalog Menu
+      </h1>
+      <p class="text-dark fs-5 mt-3" style="max-width: 700px; margin: 0 auto">
+        Pilih kategori favoritmu dan temukan berbagai varian menu spesial kami.
+      </p>
+    </div>
+
+    <div class="row">
+      <!-- Sidebar (Category Tabs) -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <div
+          class="nav flex-column nav-pills gap-2"
+          id="v-pills-tab"
+          role="tablist"
+        >
+          <button
+            class="nav-link active text-start fw-semibold text-primary"
+            id="v-pills-coffee-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-coffee"
+            type="button"
+            role="tab"
+          >
+            ☕ Coffee
+          </button>
+          <button
+            class="nav-link text-start fw-semibold text-primary"
+            id="v-pills-noncoffee-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-noncoffee"
+            type="button"
+            role="tab"
+          >
+            🍵 Non Coffee
+          </button>
+          <button
+            class="nav-link text-start fw-semibold text-primary"
+            id="v-pills-snack-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-snack"
+            type="button"
+            role="tab"
+          >
+            🍪 Snack
+          </button>
+          <button
+            class="nav-link text-start fw-semibold text-primary"
+            id="v-pills-dessert-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-dessert"
+            type="button"
+            role="tab"
+          >
+            🍰 Dessert
+          </button>
+        </div>
+      </div>
+
+      <!-- Content (Menu Items) -->
+      <div class="col-md-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <!-- Coffee -->
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-coffee"
+            role="tabpanel"
+          >
+            <h3 class="fw-bold text-primary mb-4">Coffee Series</h3>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 catalog-card">
+                  <img
+                    src="{{ url_for('static', filename='img/coffe1.jpg') }}"
+                    class="card-img-top"
+                    alt="Iced Americano"
+                  />
+                  <div class="card-body">
+                    <h5 class="fw-semibold text-primary mb-1">
+                      Iced Americano
+                    </h5>
+                    <p class="text-warning fw-bold mb-1">Rp 22.000</p>
+                    <p class="small text-muted mb-0">
+                      Espresso dan air dingin yang menghadirkan aroma kuat
+                      dengan kesegaran khas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 catalog-card">
+                  <img
+                    src="{{ url_for('static', filename='img/coffe1.jpg') }}"
+                    class="card-img-top"
+                    alt="Hot Americano"
+                  />
+                  <div class="card-body">
+                    <h5 class="fw-semibold text-primary mb-1">Hot Americano</h5>
+                    <p class="text-warning fw-bold mb-1">Rp 22.000</p>
+                    <p class="small text-muted mb-0">
+                      Espresso dengan air panas — cita rasa klasik dan bold.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 catalog-card">
+                  <img
+                    src="{{ url_for('static', filename='img/coffe1.jpg') }}"
+                    class="card-img-top"
+                    alt="Hot Americano"
+                  />
+                  <div class="card-body">
+                    <h5 class="fw-semibold text-primary mb-1">Hot Americano</h5>
+                    <p class="text-warning fw-bold mb-1">Rp 22.000</p>
+                    <p class="small text-muted mb-0">
+                      Espresso dengan air panas — cita rasa klasik dan bold.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Non Coffee -->
+          <div class="tab-pane fade" id="v-pills-noncoffee" role="tabpanel">
+            <h3 class="fw-bold text-primary mb-4">Non Coffee Series</h3>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 catalog-card">
+                  <img
+                    src="{{ url_for('static', filename='img/coffe1.jpg') }}"
+                    class="card-img-top"
+                    alt="Matcha Latte"
+                  />
+                  <div class="card-body">
+                    <h5 class="fw-semibold text-primary mb-1">Matcha Latte</h5>
+                    <p class="text-warning fw-bold mb-1">Rp 26.000</p>
+                    <p class="small text-muted mb-0">
+                      Matcha premium berpadu susu creamy, rasa halus & earthy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Snack -->
+          <div class="tab-pane fade" id="v-pills-snack" role="tabpanel">
+            <h3 class="fw-bold text-primary mb-4">Snack</h3>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 catalog-card">
+                  <img
+                    src="{{ url_for('static', filename='img/coffe1.jpg') }}"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                  <div class="card-body">
+                    <h5 class="fw-semibold text-primary mb-1">Croissant</h5>
+                    <p class="text-warning fw-bold mb-1">Rp 18.000</p>
+                    <p class="small text-muted mb-0">
+                      Lembut, bermentega, dan renyah di luar — klasik Eropa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dessert -->
+          <div class="tab-pane fade" id="v-pills-dessert" role="tabpanel">
+            <h3 class="fw-bold text-primary mb-4">Dessert</h3>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 catalog-card">
+                  <img
+                    src="{{ url_for('static', filename='img/coffe1.jpg') }}"
+                    class="card-img-top"
+                    alt="Cheesecake"
+                  />
+                  <div class="card-body">
+                    <h5 class="fw-semibold text-primary mb-1">Cheesecake</h5>
+                    <p class="text-warning fw-bold mb-1">Rp 30.000</p>
+                    <p class="small text-muted mb-0">
+                      Cream cheese lembut dengan sentuhan rasa vanilla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

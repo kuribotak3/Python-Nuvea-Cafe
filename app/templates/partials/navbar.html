@@ -21,7 +21,7 @@
         <li class="nav-item">
           <a
             class="nav-link {% if request.endpoint == 'menu.catalog' %}active{% endif %}"
-            href="#"
+            href="{{ url_for('menu.catalog') }}"
             >Menu</a
           >
         </li>

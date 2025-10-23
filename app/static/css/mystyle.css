@@ -384,3 +384,29 @@ footer .copyright {
 }
 
 /* --- ABOUT US --- */
+
+/* --- CATALOG --- */
+
+.nav-pills .nav-link {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(143, 79, 14, 0.3);
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--bs-primary);
+  color: #fff !important;
+  box-shadow: 0 4px 10px rgba(143, 79, 14, 0.3);
+}
+
+.catalog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+}
+
+.catalog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(143, 79, 14, 0.2);
+}
+
+/* --- CATALOG --- */
