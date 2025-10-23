@@ -17,7 +17,12 @@
             <div class="container">
               <div class="row g-4 justify-content-center">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card shadow p-3 h-100">
+                  <div
+                    class="card shadow p-3 h-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#menuModal"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="{{ url_for('static', filename='img/coffe1.jpg') }}"
                       class="card-img-top"
@@ -34,7 +39,12 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card shadow p-3 h-100">
+                  <div
+                    class="card shadow p-3 h-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#menuModal"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="{{ url_for('static', filename='img/coffe1.jpg') }}"
                       class="card-img-top"
@@ -51,7 +61,12 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card shadow p-3 h-100">
+                  <div
+                    class="card shadow p-3 h-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#menuModal"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="{{ url_for('static', filename='img/coffe1.jpg') }}"
                       class="card-img-top"
@@ -68,7 +83,12 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card shadow p-3 h-100">
+                  <div
+                    class="card shadow p-3 h-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#menuModal"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="{{ url_for('static', filename='img/coffe1.jpg') }}"
                       class="card-img-top"
@@ -183,3 +203,5 @@
     </div>
   </div>
 </div>
+
+{% include "modalmenu.html" %}

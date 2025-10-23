@@ -1,0 +1,95 @@
+<div
+  class="modal fade"
+  id="menuModal"
+  tabindex="-1"
+  aria-labelledby="menuModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card border-0 shadow-none">
+          <div class="row align-items-stretch">
+            <!-- Kolom Gambar -->
+            <div class="col-5">
+              <img
+                src="{{ url_for('static', filename='img/coffe1.jpg') }}"
+                alt="Coffe 1"
+                class="img-fluid rounded"
+                style="height: 300px; object-fit: cover"
+              />
+            </div>
+
+            <!-- Kolom Konten -->
+            <div
+              class="col-7 d-flex flex-column justify-content-between position-relative p-3"
+            >
+              <!-- Tombol X (pojok kanan atas) -->
+              <button
+                type="button"
+                class="btn-close position-absolute top-0 end-0 mt-2 me-2"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+
+              <!-- Teks Tengah -->
+              <div>
+                <h3 class="card-title fw-semibold mb-2">Iced Cappucino</h3>
+                <p class="card-text small text-body-secondary mb-0">
+                  Espresso shoot yang dicampur dengan segelas air menghadirkan
+                  karakter, aroma, dan rasa yang ideal.
+                </p>
+              </div>
+
+              <!-- Counter + Tombol Add to Cart -->
+              <div
+                class="d-flex justify-content-end align-items-center gap-2 mt-3"
+              >
+                <div
+                  class="input-group input-group-sm"
+                  style="max-width: 90px; height: 32px"
+                >
+                  <button
+                    class="btn btn-outline-success btn-sm px-2 py-1"
+                    type="button"
+                    id="decBtn"
+                    aria-label="Kurangi"
+                    style="font-size: 1rem; line-height: 1"
+                  >
+                    −
+                  </button>
+
+                  <input
+                    id="qty"
+                    type="number"
+                    class="form-control text-center border-start-0 border-end-0 p-0"
+                    value="1"
+                    min="0"
+                    max="10"
+                    step="1"
+                    aria-label="Jumlah"
+                    style="width: 30px; font-size: 0.9rem"
+                  />
+
+                  <button
+                    class="btn btn-outline-success btn-sm px-2 py-1"
+                    type="button"
+                    id="incBtn"
+                    aria-label="Tambah"
+                    style="font-size: 1rem; line-height: 1"
+                  >
+                    +
+                  </button>
+                </div>
+
+                <button class="btn btn-dark btn-sm px-3 py-1">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

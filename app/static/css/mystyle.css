@@ -1,18 +1,3 @@
-:root {
-  --bs-primary: #8f4f0e;
-  --bs-primary-rgb: 143, 79, 14;
-  --bs-secondary: #c68c53;
-  --bs-secondary-rgb: 198, 140, 83;
-  --bs-success: #4e944f;
-  --bs-success-rgb: 78, 148, 79;
-  --bs-danger: #b23b3b;
-  --bs-danger-rgb: 178, 59, 59;
-  --bs-warning: #e5b567;
-  --bs-warning-rgb: 229, 181, 103;
-  --bs-info: #5d8aa8;
-  --bs-info-rgb: 93, 138, 168;
-}
-
 body {
   background-color: #fcc995;
   color: #fff; /* opsional: ubah teks agar kontras */
