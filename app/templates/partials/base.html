@@ -16,6 +16,8 @@
         
         {% block main_content %}{% endblock %}
         
+        {% include "cart/index.html" %}
+
         {% include "partials/footer.html" %}
         
         {{ bootstrap.load_js() }}

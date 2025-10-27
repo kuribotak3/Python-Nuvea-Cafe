@@ -438,3 +438,25 @@ footer .copyright {
 }
 
 /* --- REGIS FORM --- */
+
+/* --- CART MODAL --- */
+
+#cartModal .table > :not(caption) > * > * {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#cartModal .btn-outline-secondary {
+  color: var(--bs-primary);
+  border-color: rgba(143, 79, 14, 0.3);
+}
+#cartModal .btn-outline-secondary:hover {
+  background-color: var(--bs-secondary);
+  color: #fff;
+}
+
+#cartModal .modal-content {
+  box-shadow: 0 8px 25px rgba(143, 79, 14, 0.25);
+}
+
+/* --- CART MODAL --- */
