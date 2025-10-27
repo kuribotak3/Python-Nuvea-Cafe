@@ -410,3 +410,31 @@ footer .copyright {
 }
 
 /* --- CATALOG --- */
+
+/* --- LOGIN FORM --- */
+
+#login-section .form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 8px rgba(143, 79, 14, 0.25);
+}
+
+#login-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(143, 79, 14, 0.3);
+}
+
+/* --- LOGIN FORM --- */
+
+/* --- REGIS FORM --- */
+
+#register-section .form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 8px rgba(143, 79, 14, 0.25);
+}
+
+#register-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(143, 79, 14, 0.3);
+}
+
+/* --- REGIS FORM --- */

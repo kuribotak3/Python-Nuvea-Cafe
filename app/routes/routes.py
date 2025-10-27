@@ -9,3 +9,11 @@ def about():
 @menu.route('/catalog-menu')
 def catalog():
     return render_template('catalog/index.html')
+
+@menu.route("/login")
+def login():
+    return render_template("login/index.html")
+
+@menu.route("/register")
+def register():
+    return render_template("register/index.html")

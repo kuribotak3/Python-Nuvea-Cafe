@@ -25,12 +25,17 @@
             >Menu</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item me-3">
           <a
             class="nav-link {% if request.endpoint == 'menu.about' %}active{% endif %}"
             href="{{ url_for('menu.about') }}"
             >About</a
           >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('menu.login') }}"
+            ><i class="fa-solid fa-user"></i>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"

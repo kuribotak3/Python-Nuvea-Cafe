@@ -1,0 +1,128 @@
+<section
+  id="register-section"
+  class="d-flex align-items-center justify-content-center vh-100"
+  style="background: linear-gradient(135deg, #fbc994, #f4a46025)"
+>
+  <div
+    class="card shadow-lg border-0"
+    style="
+      width: 600px;
+      border-radius: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+    "
+  >
+    <div class="card-body p-5">
+      <!-- Title -->
+      <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary" style="letter-spacing: 1px">
+          Create Account
+        </h2>
+        <p class="text-muted small mb-0">
+          Bergabung dan nikmati kehangatan secangkir kopi bersama kami
+        </p>
+      </div>
+
+      <!-- Register Form -->
+      <form action="#" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label text-primary fw-semibold"
+            >Nama Lengkap</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Nama lengkap kamu"
+            required
+            style="border-radius: 0.75rem"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label text-primary fw-semibold"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="you@example.com"
+            required
+            style="border-radius: 0.75rem"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label text-primary fw-semibold"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="••••••••"
+            required
+            style="border-radius: 0.75rem"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label text-primary fw-semibold"
+            >No. Telepon</label
+          >
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="0812-3456-7890"
+            required
+            style="border-radius: 0.75rem"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="address" class="form-label text-primary fw-semibold"
+            >Alamat</label
+          >
+          <textarea
+            class="form-control"
+            id="address"
+            rows="2"
+            placeholder="Masukkan alamat lengkap"
+            required
+            style="border-radius: 0.75rem; resize: none"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="btn w-100 fw-semibold"
+          style="
+            background-color: var(--bs-primary);
+            color: #fff;
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+          "
+          onmouseover="this.style.backgroundColor='var(--bs-secondary)'"
+          onmouseout="this.style.backgroundColor='var(--bs-primary)'"
+        >
+          Daftar Sekarang
+        </button>
+      </form>
+
+      <!-- Login Link -->
+      <div class="text-center mt-4">
+        <p class="small text-muted mb-0">
+          Sudah punya akun?
+          <a
+            href="{{ url_for('menu.login') }}"
+            class="text-success fw-semibold text-decoration-none"
+            >Login Sekarang</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
